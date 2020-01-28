@@ -11,7 +11,7 @@ mongoose.connect(
     useUnifiedTopology: true
   }
 );
-server.user(cors);
+server.use(cors());
 server.use(express.json());
 server.use(routes);
 
